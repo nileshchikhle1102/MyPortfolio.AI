@@ -299,9 +299,9 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#FAFAFA] dark:bg-[#0B0C0F] text-[#111111] dark:text-[#F4F4F5] transition-colors duration-200">
+    <div className="min-h-screen print:min-h-0 bg-[#FAFAFA] dark:bg-[#0B0C0F] print:bg-white text-[#111111] dark:text-[#F4F4F5] transition-colors duration-200">
       {/* Top Navigation Bar — Strict 3-Zone Contract */}
-      <header className="sticky top-0 z-40 border-b border-[#E4E4E7] dark:border-[#27272A] bg-[#FAFAFA]/95 dark:bg-[#0B0C0F]/95 backdrop-blur-md">
+      <header className="sticky top-0 z-40 print:hidden border-b border-[#E4E4E7] dark:border-[#27272A] bg-[#FAFAFA]/95 dark:bg-[#0B0C0F]/95 backdrop-blur-md">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-8 px-6 py-4">
           {/* Zone 1: Single-line Brand Wordmark */}
           <a
@@ -369,7 +369,7 @@ export default function App() {
         )}
       </header>
 
-      <main id="top" className="mx-auto max-w-6xl px-6">
+      <main id="top" className="mx-auto max-w-6xl px-6 print:hidden">
         {/* Hero Split-Screen Section */}
         <section className="pt-14 pb-12 lg:pt-20 lg:pb-16">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-stretch">
@@ -1035,7 +1035,7 @@ export default function App() {
       </main>
 
       {/* Quiet Editorial Footer */}
-      <footer className="border-t border-[#E4E4E7] dark:border-[#27272A] py-8">
+      <footer className="border-t border-[#E4E4E7] dark:border-[#27272A] py-8 print:hidden">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 text-xs text-[#71717A] dark:text-[#A1A1AA]">
           <p>© {new Date().getFullYear()} {PROFILE.name}. Built with React, TypeScript &amp; Node.js.</p>
           <div className="flex flex-wrap items-center gap-5">

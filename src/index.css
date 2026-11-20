@@ -39,23 +39,33 @@
   }
 }
 
+@page {
+  size: A4 portrait;
+  margin: 10mm 12mm;
+}
+
 @media print {
-  body * {
-    visibility: hidden;
-  }
-  #resume-print-sheet,
-  #resume-print-sheet * {
-    visibility: visible;
-  }
-  #resume-print-sheet {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+  html,
+  body {
     background: #ffffff !important;
     color: #111111 !important;
-    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: auto !important;
+    overflow: visible !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  #resume-print-sheet {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #ffffff !important;
+    color: #111111 !important;
     border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
   }
 }

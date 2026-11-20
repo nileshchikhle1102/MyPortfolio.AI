@@ -69,6 +69,7 @@ export function generateStandalonePortfolioHtml(): string {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111111'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' fill='%23FAFAFA' font-family='system-ui,sans-serif' font-weight='700' font-size='28'%3ENC%3C/text%3E%3Crect x='45' y='46' width='8' height='4' rx='2' fill='%232563EB'/%3E%3C/svg%3E" />
   <title>${esc(PROFILE.name)} — ${esc(PROFILE.role)}</title>
   <meta name="description" content="${esc(PROFILE.bio)}" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
